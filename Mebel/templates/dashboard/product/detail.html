@@ -1,0 +1,105 @@
+{% extends 'dashboard/base.html' %}
+{% block title %} Product - Detail {% endblock %}
+{% load static %}
+{% block content %}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Product List</h4>
+            <p class="category">here is Product on database you can see</p>
+        </div>
+        <div class="card-content table-responsive table-full-width">
+            <table class="table table-striped">
+                <thead>
+                    <th>Key</th>
+                    <th>Value</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ID</td>
+                        <td>{{ ctg.id }}</td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>{{ ctg.name }}</td>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>{{ ctg.color }}</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>{{ ctg.material }}</td>
+                    </tr>
+                    <tr>
+                        <td>FillIn</td>
+                        <td>{{ ctg.fillIn }}</td>
+                    </tr>
+                    <tr>
+                        <td>Is_bed</td>
+                        <td>{{ ctg.is_bed }}</td>
+                    </tr>
+                    <tr>
+                        <td>Wide</td>
+                        <td>{{ ctg.wide }}</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>{{ ctg.height }}</td>
+                    </tr>
+                    {% if ctg.is_bed %}
+                    <tr>
+                        <td>Bed length</td>
+                        <td>{{ ctg.bed_length }}</td>
+                    </tr>
+                    <tr>
+                        <td>Bed wide</td>
+                        <td>{{ ctg.bed_wide }}</td>
+                    </tr>
+                    <tr>
+                        <td>Bed height</td>
+                        <td>{{ ctg.bed_height }}</td>
+                    </tr>
+                    <tr>
+                        <td>Category Id</td>
+                        <td>{{ ctg.ctg_id }}</td>
+                    </tr>
+
+                    <tr>
+                        <td>Price</td>
+                        <td>{{ ctg.price }}</td>
+                    </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <a href="{% url 'dashboard_prod_list'  %}">
+    <button type="button" class="btn btn-wd btn-default btn-fill btn-move-left">
+        <span class="btn-label">
+            <i class="ti-angle-left"></i>
+        </span>
+        Back
+    </button>
+     </a>
+    <a href="{% url 'dash_prod_edit' pk=ctg.id %}">
+    <button type="button" class="btn btn-wd btn-info  btn-rotate">
+    <span class="btn-label">
+        <i class="fa fa-edit"></i>
+    </span>
+    Edit
+</button>
+     </a>
+
+    <a href="{% url 'dash_prod_conf' pk=ctg.id %}">
+    <button type="button" class="btn btn-wd btn-warning  btn-magnify">
+    <span class="btn-label">
+        <i class="ti-alert"></i>
+    </span>
+    delete
+</button>
+</a>
+</div>
+
+{% endblock %}

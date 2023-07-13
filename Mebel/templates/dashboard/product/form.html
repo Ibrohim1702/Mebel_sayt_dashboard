@@ -1,0 +1,38 @@
+{% extends 'dashboard/base.html' %}
+{% block title %} Product - Form {% endblock %}
+{% load static %}
+{% block content %}
+
+<div class="col-md-6">
+	<div class="card">
+		<form method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			<div class="card-header">
+				<h4 class="card-title">
+					Product Add
+				</h4>
+			</div>
+			<div class="card-content">
+				{{ forms.as_p }}
+
+				<button type="submit" class="btn  btn-success">
+				  <span class="btn-label">
+					  <i class="fa fa-check"></i>
+				  </span>
+					Save
+				</button>
+
+			<a href="{% url 'dashboard_prod_list' %}">
+				<button type="button" class="btn btn-info">
+					 <span class="btn-label">
+					  <i class="ti-arrow-left"></i>
+					 </span>
+					Back
+				</button>
+			</a>
+			</div>
+		</form>
+	</div> <!-- end card -->
+</div> <!--  end col-md-6  -->
+
+{% endblock %}

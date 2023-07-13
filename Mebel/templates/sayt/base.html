@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	{% load static %}
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="{% static  'sayt/images/favicon.ico' %}" sizes="16x16">
+	<title>Mebel-Ars - {% block title %}{% endblock %} </title>
+	<link media="all" rel="stylesheet" type="text/css" href="{% static  'sayt/css/all.css' %}" />
+</head>
+<body>
+
+	{% block content %}{% endblock %}
+
+	<link media="all" rel="stylesheet" type="text/css" href="{% static  'sayt/css/jquery.fancybox.min.css' %}" />
+	<link media="all" rel="stylesheet" type="text/css" href="{% static  'sayt/css/slick.css' %}" />
+	<script src="{% static  'sayt/js/jquery-2.2.4.min.js' %}"></script>
+	<script src="{% static  'sayt/js/jquery.fancybox.min.js' %}"></script>
+	<script src="{% static  'sayt/js/slick.min.js' %}"></script>
+	<script src="{% static  'sayt/js/jquery.scrollTo.min.js' %}"></script>
+	<script src="{% static  'sayt/js/all.js' %}"></script>
+</body>
+</html>
+

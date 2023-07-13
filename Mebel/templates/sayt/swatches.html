@@ -1,0 +1,43 @@
+{% extends 'sayt/base.html' %}
+{% block title %} Product {% endblock %}
+{% block content %}
+{% load static %}
+<div id="wrapper">
+{% include 'sayt/_partials/header.html' %}
+<section class="main">
+<div class="holder">
+
+<div class="right-text-tabs">
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane active" id="info">
+				<p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
+				<p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
+			</div>
+			<div class="tab-pane" id="description">
+				<p>The first thing you notice when you hold the phone is how great it feels in your hand. The cover glass curves down around the sides to meet the anodized aluminum enclosure in a remarkable, simplified design. </p>
+				<p>There are no distinct edges. No gaps. Just a smooth, seamless bond of metal and glass that feels like one continuous surface.</p>
+			</div>
+			<div class="tab-pane" id="concept">
+				<p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
+				<p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display. </p>
+			</div>
+			<div class="tab-pane" id="support">
+				<p>From the seamless transition of glass and metal to the streamlined profile, every detail was carefully considered to enhance your experience. So while its display is larger, the phone feels just right.</p>
+				<p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
+			</div>
+			<div class="tab-pane" id="extra">
+				<p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display. </p>
+				<p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation of phone that’s better by any measure.</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	</div>
+</section>
+{% include 'sayt/_partials/footer.html' %}
+</div>
+{% endblock %}

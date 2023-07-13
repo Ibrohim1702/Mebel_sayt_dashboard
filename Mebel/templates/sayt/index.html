@@ -1,0 +1,124 @@
+{% extends 'sayt/base.html' %}
+{% block title %} Card {% endblock %}
+{% block content %}
+{% load static %}
+
+	<div id="wrapper">
+			{% include 'sayt/_partials/header.html' %}
+
+		<section class="main">
+			<div class="holder">
+				<div class="banner-slider">
+
+
+					<div class="banner-slide">
+						<img src="{% static '../media/glavni2.jpg' %}" alt="">
+						<div class="banner-info">
+							<div class="banner-info-block">
+								<div class="banner-name">{{ i.name }}  {{ i.ctg }}</div>
+								<div class="banner-price"><span></span>{{ i.price }} €</div>
+								<div class="banner-color-text">Available other color</div>
+								<div class="banner-color">
+									<div class="banner-color-item" style="background: #0b5359"></div>
+									<div class="banner-color-item" style="background: #454a4e"></div>
+									<div class="banner-color-item" style="background: #ffffff"></div>
+								</div>
+								<a href="#" class="button button-arrow">
+									<span class="button-wrap">Buy</span>
+								</a>
+							</div>
+						</div>
+						<div class="banner-discount">-34%</div>
+					</div>
+				</div>
+				<div class="product-section">
+					<h2 class="title">New season</h2>
+					<div class="catalog-slider">
+						{% for i in products %}
+						{%  if forloop.counter >= 3  and forloop.counter <= 6 %}
+						<div class="catalog-slide">
+							<div class="catalog-item">
+								<div class="catalog-inner">
+									<div class="catalog-icons">
+										<a href="#" class="catalog-up"></a>
+										<a href="#" class="catalog-fav"></a>
+									</div>
+									<div class="catalog-img">
+										{% for j in i.img %}
+											<div class="catalog-img-slide"> <img src="{{ j.img.url }}" alt="internetni tekshir"></div>
+										{% endfor %}
+									</div>
+									<div class="catalog-category"><a href="{% url 'product_view' pk=i.products.id %}">{{ i.products.ctg }}</a></div>
+									<div class="catalog-name"><a href="{% url 'product_view' pk=i.products.id %}">{{ i.products.name }}</a></div>
+									<div class="catalog-price"> {{ i.products.price }}€</div>
+									<div class="catalog-hidden">
+										<div class="catalog-buttons">
+											<a href="{% url 'product_view' pk=i.products.id %}" class="button-min">buy</a>
+											<a href="{% url 'cart' %}" class="button-min button-light">add to cart</a>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">dimensions</div>
+											<div class="size-line">
+												<div class="size-item"> Wide <br>{{ i.wide }}см</div>
+												<div class="size-item">height <br>{{ i.height }}см</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+				<div class="promo">
+					<h2 class="title">Хиты продаж</h2>
+					<div class="promo-block">
+						<div class="promo-big">
+							<div class="promo-item">
+								<img src="{% static 'sayt/images/media/promo1.jpg' %}" alt="">
+								<div class="promo-info">
+									<div class="promo-category">Еврокнижка</div>
+									<div class="promo-name"><a href="">Фиджи</a></div>
+									<div class="promo-price">5 500 ₽</div>
+								</div>
+								<div class="catalog-icons">
+									<a href="" class="catalog-up"></a>
+									<a href="" class="catalog-fav"></a>
+								</div>
+							</div>
+						</div>
+						<div class="promo-side">
+							<div class="promo-item">
+								<img src="{% static 'sayt/images/media/promo2.jpg' %}" alt="">
+								<div class="promo-info">
+									<div class="promo-category">Еврокнижка</div>
+									<div class="promo-name"><a href="">Фиджи</a></div>
+									<div class="promo-price">5 500 ₽</div>
+								</div>
+								<div class="catalog-icons">
+									<a href="" class="catalog-up"></a>
+									<a href="" class="catalog-fav"></a>
+								</div>
+							</div>
+							<div class="promo-item">
+								<img src="{% static 'sayt/images/media/promo3.jpg' %}" alt="">
+								<div class="promo-info">
+									<div class="promo-category">Еврокнижка</div>
+									<div class="promo-name"><a href="">Фиджи</a></div>
+									<div class="promo-price">5 500 ₽</div>
+								</div>
+								<div class="catalog-icons">
+									<a href="" class="catalog-up"></a>
+									<a href="" class="catalog-fav"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		{% include 'sayt/_partials/footer.html' %}
+	</div>
+		{% endblock %}

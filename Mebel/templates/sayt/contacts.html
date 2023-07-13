@@ -1,0 +1,72 @@
+{% extends 'sayt/base.html' %}
+{% block title %} Contact {% endblock %}
+{% block content %}
+{% load static %}
+	<div id="wrapper">
+		{% include 'sayt/_partials/header.html' %}
+		<section class="main">
+			<div class="holder">
+				<div class="contacts">
+					<div class="contacts-side">
+						<h2 class="title-min">Контакты</h2>
+						<ul class="contacts-list">
+							<li>
+								<div class="contacts-text">Телефон для справок и заказов:</div>
+								<div class="contacts-info"><a href="tel:+84957405344">8 (495) 740 53 44</a></div>
+							</li>
+							<li>
+								<div class="contacts-text">Информационные вопросы:</div>
+								<div class="contacts-info"><a href="mailto:info@mebel-ars.ru">info@mebel-ars.ru</a></div>
+							</li>
+							<li>
+								<div class="contacts-text">Отдел рекламаций:</div>
+								<div class="contacts-info"><a href="mailto:service@mebel-ars.ru">service@mebel-ars.ru</a></div>
+							</li>
+							<li>
+								<div class="contacts-text">Отдел продаж:</div>
+								<div class="contacts-info"><a href="mailto:sales@mebel-ars.ru">sales@mebel-ars.ru</a></div>
+							</li>
+							<li>
+								<div class="contacts-text">По вопросам сотрудничества:</div>
+								<div class="contacts-info"><a href="mailto:director@mebel-ars.ru">director@mebel-ars.ru</a></div>
+							</li>
+							<li>
+								<div class="contacts-text">Время работы офиса</div>
+								<div class="contacts-info">с 9<sup>00</sup> до 21<sup>00</sup></div>
+							</li>
+						</ul>
+					</div>
+					<div class="contacts-form">
+						<h2 class="title-min">Вопросы</h2>
+						<form action="">
+							<fieldset>
+								<input type="text" class="input" placeholder="Имя">
+								<input type="text" class="input" placeholder="Телефон">
+								<input type="text" class="input" placeholder="Почта">
+								<textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="Сообщение"></textarea>
+								<button class="button">
+									<span class="button-wrap">оформить заказ</span>
+								</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="bottom">
+			<div class="holder">
+				<div class="bottom-block">
+					<div class="bottom-col">
+						<div class="bottom-text">Не можете определиться с моделью?</div>
+						<div class="bottom-title">Свяжитесь с нами</div>
+					</div>
+					<div class="bottom-col">
+						<div class="bottom-phone"><a href="tel:+88008008080">8 800 800 80 80</a></div>
+						<div class="bottom-text">Мы работаем ежедневно с 9<sup>00</sup> до 20<sup>00</sup></div>	
+					</div>
+				</div>
+			</div>	
+		</section>
+{% include 'sayt/_partials/footer.html' %}
+	</div>
+{% endblock %}

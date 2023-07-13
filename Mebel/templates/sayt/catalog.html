@@ -1,0 +1,314 @@
+{% extends 'sayt/base.html' %}
+{% block title %} Catalog {% endblock %}
+{% block content %}
+{% load static %}
+	<div id="wrapper">
+		{% include 'sayt/_partials/header.html' %}
+		<section class="main">
+			<div class="holder">
+				<div class="category">
+
+					<div class="category-col">
+						<a href="{% url 'catalog_one' slug='sofas' %}" class="category-item">
+							<div class="category-img icon2">
+								<img src="{% static 'sayt/images/icons/icon2.svg' %}" alt="" class="icon-vis">
+								<img src="{% static 'sayt/images/icons/icon2-hover.svg' %}" alt="" class="icon-hover">
+							</div>
+							<div class="category-text">Sofa</div>
+						</a>
+					</div>
+
+					<div class="category-col">
+						<a href="" class="category-item">
+							<div class="category-img icon3">
+								<img src="{% static 'sayt/images/icons/icon3.svg' %}" alt="" class="icon-vis">
+								<img src="{% static 'sayt/images/icons/icon3-hover.svg' %}" alt="" class="icon-hover">
+							</div>
+							<div class="category-text">Child Sofa</div>
+						</a>
+					</div>
+
+					<div class="category-col">
+						<a href="" class="category-item">
+							<div class="category-img icon5">
+								<img src="{% static 'sayt/images/icons/icon5.svg' %}" alt="" class="icon-vis">
+								<img src="{% static 'sayt/images/icons/icon5-hover.svg' %}" alt="" class="icon-hover">
+							</div>
+							<div class="category-text">Софа и кушетки</div>
+						</a>
+					</div>
+					<div class="category-col">
+
+						<a href="{% url 'catalog_one' slug='beds'  %}" class="category-item">
+							<div class="category-img icon6">
+								<img src="{% static 'sayt/images/icons/icon6.svg' %}" alt="" class="icon-vis">
+								<img src="{% static 'sayt/images/icons/icon6-hover.svg' %}" alt="" class="icon-hover">
+							</div>
+							<div class="category-text">Bed</div>
+						</a>
+					</div>
+					<div class="category-col">
+						<a href="" class="category-item">
+							<div class="category-img icon7">
+								<img src="{% static 'sayt/images/icons/icon7.svg' %}" alt="" class="icon-vis">
+								<img src="{% static 'sayt/images/icons/icon7-hover.svg' %}" alt="" class="icon-hover">
+							</div>
+							<div class="category-text">Chair</div>
+						</a>
+					</div>
+
+					<div class="category-col">
+						<a href="" class="category-item">
+							<div class="category-img icon8">
+								<img src="{% static 'sayt/images/icons/icon8.svg' %}" alt="" class="icon-vis">
+								<img src="{% static 'sayt/images/icons/icon8-hover.svg' %}" alt="" class="icon-hover">
+							</div>
+							<div class="category-text"> For Sale</div>
+						</a>
+					</div>
+				</div>
+				<h2 class="title-min">Кресла <span>(12 товаров)</span></h2>
+				<div class="filter">
+					<div class="filter-side">
+						<a href="" class="filter-more">Больше фильтров +</a>
+						<div class="filter-item">
+							<a href="" class="filter-top">Сортировка</a>
+							<div class="filter-hidden">
+								<ul class="filter-list">
+									<li><a href="">значение фильтра 1</a></li>
+									<li><a href="">значение фильтра 2</a></li>
+									<li><a href="">значение фильтра 3</a></li>
+									<li><a href="">значение фильтра 4</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="filter-content">
+						<div class="filter-line">
+							<div class="filter-item">
+								<a href="" class="filter-top">Цена</a>
+								<div class="filter-hidden">
+									<ul class="filter-list">
+										<li><a href="">значение фильтра 1</a></li>
+										<li><a href="">значение фильтра 2</a></li>
+										<li><a href="">значение фильтра 3</a></li>
+										<li><a href="">значение фильтра 4</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-item">
+								<a href="" class="filter-top">Размеры</a>
+								<div class="filter-hidden">
+									<div class="filter-size">
+										<div class="filter-size-line">
+											<div class="filter-size-text">Длина</div>
+											<div class="filter-size-input">
+												<input type="text" class="input" placeholder="107см">
+											</div>
+											<div class="filter-size-divider">—</div>
+											<div class="filter-size-input">
+												<input type="text" class="input" placeholder="2307см">
+											</div>
+										</div>
+										<div class="filter-size-line">
+											<div class="filter-size-text">Ширина</div>
+											<div class="filter-size-input">
+												<input type="text" class="input" placeholder="107см">
+											</div>
+											<div class="filter-size-divider">—</div>
+											<div class="filter-size-input">
+												<input type="text" class="input" placeholder="2307см">
+											</div>
+										</div>
+										<div class="filter-size-line">
+											<div class="filter-size-text">Высота</div>
+											<div class="filter-size-input">
+												<input type="text" class="input" placeholder="107см">
+											</div>
+											<div class="filter-size-divider">—</div>
+											<div class="filter-size-input">
+												<input type="text" class="input" placeholder="2307см">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filter-item">
+								<a href="" class="filter-top">Спальное место</a>
+								<div class="filter-hidden">
+									<ul class="filter-list">
+										<li><a href="">значение фильтра 1</a></li>
+										<li><a href="">значение фильтра 2</a></li>
+										<li><a href="">значение фильтра 3</a></li>
+										<li><a href="">значение фильтра 4</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-item">
+								<a href="" class="filter-top">Цвет</a>
+								<div class="filter-hidden">
+									<div class="color-block">
+										<div class="color-item">
+											<input type="radio" name="color" class="color-input" id="color1">
+											<label for="color1" class="color-label" style="background: #0e0e0e;"></label>
+										</div>
+										<div class="color-item">
+											<input type="radio" name="color" class="color-input" id="color2">
+											<label for="color2" class="color-label" style="background: #454a4e;"></label>
+										</div>
+										<div class="color-item">
+											<input type="radio" name="color" class="color-input" id="color3" checked>
+											<label for="color3" class="color-label" style="background: #ffffff; border: 1px solid #000;"></label>
+										</div>
+										<div class="color-item">
+											<input type="radio" name="color" class="color-input" id="color4">
+											<label for="color4" class="color-label" style="background: #f35858;"></label>
+										</div>
+										<div class="color-item">
+											<input type="radio" name="color" class="color-input" id="color5">
+											<label for="color5" class="color-label" style="background: #fb894a;"></label>
+										</div>
+										<div class="color-item">
+											<input type="radio" name="color" class="color-input" id="color6">
+											<label for="color6" class="color-label" style="background: #fed65a;"></label>
+										</div>
+										<div class="color-item">
+											<input type="radio" name="color" class="color-input" id="color7">
+											<label for="color7" class="color-label" style="background: #9ef971;"></label>
+										</div>
+										<div class="color-item">
+											<input type="radio" name="color" class="color-input" id="color8">
+											<label for="color8" class="color-label" style="background: #64a0c2;"></label>
+										</div>
+										<div class="color-item">
+											<input type="radio" name="color" class="color-input" id="color9">
+											<label for="color9" class="color-label" style="background: #9264fa;"></label>
+										</div>
+										<div class="color-item">
+											<input type="radio" name="color" class="color-input" id="color10">
+											<label for="color10" class="color-label" style="background: #f75290;"></label>
+										</div>
+										<div class="color-item">
+											<input type="radio" name="color" class="color-input" id="color11">
+											<label for="color11" class="color-label" style="background: #e5c08a;"></label>
+										</div>
+										<div class="color-item">
+											<input type="radio" name="color" class="color-input" id="color12">
+											<label for="color12" class="color-label" style="background: #57392f;"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="filter-item">
+								<a href="" class="filter-top">Преимущества</a>
+								<div class="filter-hidden">
+									<ul class="filter-list">
+										<li><a href="">значение фильтра 1</a></li>
+										<li><a href="">значение фильтра 2</a></li>
+										<li><a href="">значение фильтра 3</a></li>
+										<li><a href="">значение фильтра 4</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-item">
+								<a href="" class="filter-top">Стиль</a>
+								<div class="filter-hidden">
+									<ul class="filter-list">
+										<li><a href="">значение фильтра 1</a></li>
+										<li><a href="">значение фильтра 2</a></li>
+										<li><a href="">значение фильтра 3</a></li>
+										<li><a href="">значение фильтра 4</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-item">
+								<a href="" class="filter-top">Механизм</a>
+								<div class="filter-hidden">
+									<ul class="filter-list">
+										<li><a href="">значение фильтра 1</a></li>
+										<li><a href="">значение фильтра 2</a></li>
+										<li><a href="">значение фильтра 3</a></li>
+										<li><a href="">значение фильтра 4</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-item">
+								<a href="" class="filter-top">Наполнение</a>
+								<div class="filter-hidden">
+									<ul class="filter-list">
+										<li><a href="">значение фильтра 1</a></li>
+										<li><a href="">значение фильтра 2</a></li>
+										<li><a href="">значение фильтра 3</a></li>
+										<li><a href="">значение фильтра 4</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="filter-item">
+								<a href="" class="filter-top">Тип обивки</a>
+								<div class="filter-hidden">
+									<ul class="filter-list">
+										<li><a href="">значение фильтра 1</a></li>
+										<li><a href="">значение фильтра 2</a></li>
+										<li><a href="">значение фильтра 3</a></li>
+										<li><a href="">значение фильтра 4</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="filter-current">
+							<a href="" class="filter-current-item">Кресла</a>
+							<a href="" class="filter-current-item">10 000 руб - 20 000 руб</a>
+							<a href="" class="filter-current-item">Зеленый</a>
+							<a href="" class="filter-delete">Очистить все</a>
+						</div>
+					</div>
+				</div>
+				<div class="catalog">
+						{% for i in products %}
+						{% if forloop.counter < 8 %}
+						<div class="catalog-col">
+							<div class="catalog-item">
+								<div class="catalog-inner">
+									<div class="catalog-icons">
+										<a href="" class="catalog-up"></a>
+										<a href="" class="catalog-fav"></a>
+								</div>
+								<div class="catalog-img">
+									{% for j in i.img %}
+									<div class="catalog-img-slide"><img src="{{ j.img.url }}" alt=""></a></div>
+									{% endfor %}
+								</div>
+								<div class="catalog-category"><a href="{% url 'product_view' pk=i.products.id%}">{{ i.products.content }}</a></div>
+								<div class="catalog-name"><a href="{% url 'product_view' pk=i.products.id%}">{{ i.products.name }}</a></div>
+								<div class="catalog-price">{{ i.products.price }} €</div>
+								<div class="catalog-hidden">
+									<div class="catalog-buttons">
+										<a href="{% url 'product_view' pk=i.products.id%}" class="button-min">buy</a>
+										<a href="" class="button-min button-light">add to cart</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+							{% endif %}
+					{% endfor %}
+				</div>
+
+				<div class="pagination">
+					<a href="" class="pag-arrow pag-prev"></a>
+					<ul class="pag-list">
+						<li><a href="" class="active">1</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">...</a></li>
+						<li><a href="">24</a></li>
+					</ul>
+					<a href="" class="pag-arrow pag-next"></a>
+				</div>
+			</div>	
+		</section>
+	{% include 'sayt/_partials/footer.html' %}
+	</div>
+
+{% endblock %}

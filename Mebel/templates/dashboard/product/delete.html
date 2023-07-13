@@ -1,0 +1,24 @@
+{% extends 'dashboard/base.html' %}
+{% block title %} Product - Detail {% endblock %}
+{% load static %}
+{% block content %}
+
+<h4>Are you sure delete this {{ ctg.name }}</h4>
+    <a href="{% url 'dash_prod_delete' pk=ctg.id %}">
+    <button type="button" class="btn btn-wd   btn-danger">
+    <span class="btn-label">
+        <i class="fa fa-times"></i>
+    </span>
+    Yes
+</button>
+</a>
+
+<a href="{% url 'dashboard_prod_list' %}">
+<button type="button" class="btn btn-wd btn-success  btn-rotate">
+    <span class="btn-label">
+        <i class="fa fa-check"></i>
+    </span>
+    No
+</button>
+    </a>
+{% endblock %}

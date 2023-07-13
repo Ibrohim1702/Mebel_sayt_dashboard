@@ -1,0 +1,77 @@
+{% extends 'dashboard/base.html' %}
+{% block title %} Category - List {% endblock %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Category List</h4>
+            <p class="category">here are all Category on database you can see</p>
+        </div>
+        <div class="card-content table-responsive table-full-width">
+            <table class="table table-striped">
+                <thead>
+                    <th>№</th>
+                    <th>ID</th>
+                    <th>Content</th>
+                    <th>Actions</th>
+                </thead>
+                <tbody>
+                {% for i in ctgs %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ i.id }}</td>
+                        <td>{{ i.content }}</td>
+                        <td class="td-actions ">
+                        <a href="{% url 'dash_ctg_detail' pk=i.id %}" rel="tooltip" title="View Profile" class="btn btn-info btn-simple btn-xs">
+                            <i class="ti-user"></i>
+                        </a>
+                        <a href="{% url 'dash_ctg_edit' pk=i.id %}" rel="tooltip" title="Edit Profile" class="btn btn-success btn-simple btn-xs">
+                            <i class="ti-pencil-alt"></i>
+                        </a>
+                        <a href="{% url 'dash_ctg_conf' pk=i.id %}" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                            <i class="ti-close"></i>
+                        </a>
+                    </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <div class="card-content">
+                <ul class="pagination">
+                    {% if prev %}
+                  <li><a href="?pag={{ prev }}"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
+                    {% endif %}
+                    {% for i in 'x'|rjust:pag %}
+                    {% if meta.pag_num == forloop.counter %}
+
+                  <li class="active"><a href="?pag={{ forloop.counter }}">{{ forloop.counter }}</a></li>
+
+                    {% else %}
+                    <li class="active"><a href="?pag={{ forloop.counter }}">{{ forloop.counter }}</a></li>
+                    {% endif %}
+
+                    {% endfor %}
+                    {% if next %}
+                  <li><a href="?pag={{ next }}"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <a href="{% url 'dash_ctg_add' %}">
+    <button type="button" class="btn btn-wd btn-warning btn-fill btn-magnify">
+    <span class="btn-label">
+        <i class="ti-plus"></i>
+    </span>
+    Add new category
+</button>
+    </a>
+</div>
+
+
+{% endblock %}

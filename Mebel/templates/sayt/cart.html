@@ -1,0 +1,126 @@
+{% extends 'sayt/base.html' %}
+{% block title %} Card {% endblock %}
+{% block content %}
+{% load static %}
+	<div id="wrapper">
+		{% include 'sayt/_partials/header.html' %}
+		<section class="main">
+			<div class="holder">
+				<div class="cart">
+					<div class="cart-content">
+						<div class="title-line">
+							<h2 class="title-min">Cart <span>(2 товара)</span></h2>
+							<a href="" class="title-link">УДАЛИТЬ ВСЕ</a>
+						</div>
+						<div class="cart-table">
+
+							<div class="cart-item">
+								<div class="cart-item-img"><img src="images/media/cart1.jpg" alt=""></div>
+								<div class="cart-item-content">
+									<div class="cart-item-category">Кресло</div>
+									<div class="cart-item-name"><a href="">Мадейра экокожа</a></div>
+									<ul class="cart-item-info">
+										<li><b>цвет</b> Серый</li>
+										<li><b>Материалы обивки</b> Рогожка, экокожа</li>
+										<li><b>Наполнение</b> ППУ</li>
+										<li><b>размеры (Д<span class="cross"></span>Ш<span class="cross"></span>В)</b> 233см<span class="cross"></span>107см<span class="cross"></span>90см</li>
+									</ul>
+									<div class="cart-item-bottom">
+										<div class="cart-item-price">Цена <b><span>122 500</span>₽</b></div>
+										<div class="quantity-line">
+											<div class="quantity-holder">
+												<a href="" class="minus"></a>
+												<input type="text" class="quantity-input" value="1">
+												<a href="" class="plus"></a>
+											</div>
+											<div class="quantity-text">шт.</div>
+										</div>
+									</div>
+									<a href="" class="cart-item-delete">Удалить</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="cart-order">
+							<h2 class="title-min">Доставка</h2>
+							<form action="">
+								<fieldset>
+									<div class="form-line">
+										<label class="form-line-label">Имя</label>
+										<div class="form-line-input">
+											<input type="text" class="input" placeholder="Имя">
+										</div>
+									</div>
+									<div class="form-line">
+										<label class="form-line-label">Телефон</label>
+										<div class="form-line-input">
+											<input type="text" class="input" placeholder="8 800 900 99 99">
+										</div>
+									</div>
+									<div class="form-line">
+										<label class="form-line-label">Почта</label>
+										<div class="form-line-input">
+											<input type="text" class="input" placeholder="Почта">
+										</div>
+									</div>
+									<div class="form-line">
+										<label class="form-line-label">доставка</label>
+										<div class="form-line-input">
+											<div class="radio-list">
+												<div class="radio-item">
+													<input type="radio" name="delivery" class="radio-input" id="d1" checked>
+													<label for="d1" class="radio-label">Курьером на дом</label>
+												</div>
+												<div class="radio-item">
+													<input type="radio" name="delivery" class="radio-input" id="d2">
+													<label for="d2" class="radio-label">Самовывоз</label>
+												</div>
+											</div>
+											<input type="text" class="input" placeholder="Адрес доставки">
+										</div>
+									</div>
+									<div class="form-button">
+										<button class="button">
+											<span class="button-wrap">Подтвердить</span>
+										</button>
+									</div>
+									<div class="form-note">* Подтверждая заказ, я соглашаюсь с условиями политики конфиденциальности</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<div class="cart-side">
+						<h2 class="title-min">Доставка <span>(2 товара)</span></h2>
+						<div class="checkout-item">Всего товаров <b>2</b></div>
+						<div class="checkout-item">Товаров на сумму <b>120 500 ₽</b></div>
+						<div class="checkout-item">Доставка <b>2 500 ₽</b></div>
+						<div class="checkout-total">Итого <b>123 000 ₽</b></div>
+						<button class="button">
+							<span class="button-wrap">
+								<span class="button-arrow">оформить заказ</span>
+							</span>
+						</button>
+						<div class="checkout-ask">
+							<a href="">Задать вопрос</a>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="bottom">
+			<div class="holder">
+				<div class="bottom-block">
+					<div class="bottom-col">
+						<div class="bottom-text">Не можете определиться с моделью?</div>
+						<div class="bottom-title">Свяжитесь с нами</div>
+					</div>
+					<div class="bottom-col">
+						<div class="bottom-phone"><a href="tel:+88008008080">8 800 800 80 80</a></div>
+						<div class="bottom-text">Мы работаем ежедневно с 9<sup>00</sup> до 20<sup>00</sup></div>	
+					</div>
+				</div>
+			</div>	
+		</section>
+	{% include 'sayt/_partials/footer.html' %}
+	</div>
+{% endblock %}

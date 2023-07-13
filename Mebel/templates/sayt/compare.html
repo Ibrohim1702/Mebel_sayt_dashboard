@@ -1,0 +1,629 @@
+{% extends 'sayt/base.html' %}
+{% block title %} Compare {% endblock %}
+{% block content %}
+{% load static %}
+	<div id="wrapper">
+		{% include 'sayt/_partials/header.html' %}
+		<section class="main">
+			<div class="holder">
+				<div class="title-line">
+					<h2 class="title-min">Сравнение товаров <span>(2 товара)</span></h2>
+					<a href="" class="title-link">УДАЛИТЬ ВСЕ</a>
+				</div>
+				<div class="compare-controls">
+					<div class="compare-radio">
+						<div class="radio-list">
+							<div class="radio-item">
+								<input type="radio" name="delivery" class="radio-input" id="d1" checked>
+								<label for="d1" class="radio-label">Все характеристики</label>
+							</div>
+							<div class="radio-item">
+								<input type="radio" name="delivery" class="radio-input" id="d2">
+								<label for="d2" class="radio-label">Различия</label>
+							</div>
+						</div>
+					</div>
+					<div class="compare-arrows">
+						<a href="" class="compare-prev slick-arrow"></a>
+						<a href="" class="compare-next slick-arrow"></a>
+					</div>
+				</div>
+				<div class="compare-slider">
+					<div class="compare-slide">
+						<div class="compare-top">
+							<a href="" class="compare-delete">Удалить</a>
+							<div class="compare-category">Диван</div>
+						</div>
+						<div class="compare-name"><a href="">Мадейра экокожа</a></div>
+						<div class="compare-img"><img src="images/media/c3.jpg" alt=""></div>
+						<ul class="compare-info">
+							<li><b>Цена </b> <span class="compare-price"><span>122 500</span>₽</span></li>
+							<li><b>цвет</b> Розовый</li>
+							<li><b>Материалы обивки</b> Рогожка, экокожа</li>
+							<li><b>Наполнение</b> ППУ</li>
+							<li><b>Габаритные размеры</b>
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>233см</div>
+									<div class="compare-size-item">Ширина <br>107см</div>
+									<div class="compare-size-item">Высота <br>90см</div>
+								</div> 
+							</li>
+							<li><b>Спальное место </b>
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>233см</div>
+									<div class="compare-size-item">Ширина <br>107см</div>
+									<div class="compare-size-item">Высота <br>90см</div>
+								</div> 
+							</li>
+							<li><b>ЗАрядное устройство usb</b> -</li>
+							<li><b>количество посадочных мест</b> 2</li>
+							<li><b>Декоративные подушки</b> -</li>
+							<li><b>Бельевой ящик</b> -</li>
+							<li><b>Конфигурация</b> -</li>
+							<li><b>Ширина дверного проема</b> 70</li>
+							<li><b>механизм</b> без механизма</li>
+							<li><b>Цвет ножек</b> Орех, Сосна</li>
+							<li><b>Спальное место</b> -</li>
+							<li><b>Транспортировка</b> -</li>
+							<li><b>посадочное место</b> 
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>57см</div>
+									<div class="compare-size-item">Ширина <br>46см</div>
+									<div class="compare-size-item">Высота <br>13см</div>
+								</div> 
+							</li>
+							<li><b>Наполнение подушек</b> -</li>
+							<li><b>Наполнение</b> зависимый пружинный блок</li>
+						</ul>
+						<div class="compare-button">
+							<a href="" class="button button-white"><span class="button-wrap">в корзину</span></a>
+						</div>
+						<a href="" class="compare-ask">Задать вопрос по этой модели</a>
+					</div>
+					<div class="compare-slide">
+						<div class="compare-top">
+							<a href="" class="compare-delete">Удалить</a>
+							<div class="compare-category">Диван</div>
+						</div>
+						<div class="compare-name"><a href="">Амстредам</a></div>
+						<div class="compare-img"><img src="images/media/c2.jpg" alt=""></div>
+						<ul class="compare-info">
+							<li><b>Цена </b> <span class="compare-price"><span>72 500</span>₽</span></li>
+							<li><b>цвет</b> Розовый</li>
+							<li><b>Материалы обивки</b> Рогожка, экокожа</li>
+							<li><b>Наполнение</b> ППУ</li>
+							<li><b>Габаритные размеры</b>
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>233см</div>
+									<div class="compare-size-item">Ширина <br>107см</div>
+									<div class="compare-size-item">Высота <br>90см</div>
+								</div> 
+							</li>
+							<li><b>Спальное место </b>
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>233см</div>
+									<div class="compare-size-item">Ширина <br>107см</div>
+									<div class="compare-size-item">Высота <br>90см</div>
+								</div> 
+							</li>
+							<li><b>ЗАрядное устройство usb</b> -</li>
+							<li><b>количество посадочных мест</b> 2</li>
+							<li><b>Декоративные подушки</b> -</li>
+							<li><b>Бельевой ящик</b> -</li>
+							<li><b>Конфигурация</b> -</li>
+							<li><b>Ширина дверного проема</b> 70</li>
+							<li><b>механизм</b> без механизма</li>
+							<li><b>Цвет ножек</b> Орех, Сосна</li>
+							<li><b>Спальное место</b> -</li>
+							<li><b>Транспортировка</b> -</li>
+							<li><b>посадочное место</b> 
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>57см</div>
+									<div class="compare-size-item">Ширина <br>46см</div>
+									<div class="compare-size-item">Высота <br>13см</div>
+								</div> 
+							</li>
+							<li><b>Наполнение подушек</b> -</li>
+							<li><b>Наполнение</b> зависимый пружинный блок</li>
+						</ul>
+						<div class="compare-button">
+							<a href="" class="button button-white"><span class="button-wrap">в корзину</span></a>
+						</div>
+						<a href="" class="compare-ask">Задать вопрос по этой модели</a>
+					</div>
+					<div class="compare-slide">
+						<div class="compare-top">
+							<a href="" class="compare-delete">Удалить</a>
+							<div class="compare-category">Диван</div>
+						</div>
+						<div class="compare-name"><a href="">Мартин</a></div>
+						<div class="compare-img"><img src="images/media/c1.jpg" alt=""></div>
+						<ul class="compare-info">
+							<li><b>Цена </b> <span class="compare-price"><span>72 500</span>₽</span></li>
+							<li><b>цвет</b> Розовый</li>
+							<li><b>Материалы обивки</b> Рогожка, экокожа</li>
+							<li><b>Наполнение</b> ППУ</li>
+							<li><b>Габаритные размеры</b>
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>233см</div>
+									<div class="compare-size-item">Ширина <br>107см</div>
+									<div class="compare-size-item">Высота <br>90см</div>
+								</div> 
+							</li>
+							<li><b>Спальное место </b>
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>233см</div>
+									<div class="compare-size-item">Ширина <br>107см</div>
+									<div class="compare-size-item">Высота <br>90см</div>
+								</div> 
+							</li>
+							<li><b>ЗАрядное устройство usb</b> -</li>
+							<li><b>количество посадочных мест</b> 2</li>
+							<li><b>Декоративные подушки</b> -</li>
+							<li><b>Бельевой ящик</b> -</li>
+							<li><b>Конфигурация</b> -</li>
+							<li><b>Ширина дверного проема</b> 70</li>
+							<li><b>механизм</b> без механизма</li>
+							<li><b>Цвет ножек</b> Орех, Сосна</li>
+							<li><b>Спальное место</b> -</li>
+							<li><b>Транспортировка</b> -</li>
+							<li><b>посадочное место</b> 
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>57см</div>
+									<div class="compare-size-item">Ширина <br>46см</div>
+									<div class="compare-size-item">Высота <br>13см</div>
+								</div> 
+							</li>
+							<li><b>Наполнение подушек</b> -</li>
+							<li><b>Наполнение</b> зависимый пружинный блок</li>
+						</ul>
+						<div class="compare-button">
+							<a href="" class="button button-white"><span class="button-wrap">в корзину</span></a>
+						</div>
+						<a href="" class="compare-ask">Задать вопрос по этой модели</a>
+					</div>
+					<div class="compare-slide">
+						<div class="compare-top">
+							<a href="" class="compare-delete">Удалить</a>
+							<div class="compare-category">Диван</div>
+						</div>
+						<div class="compare-name"><a href="">Мартин</a></div>
+						<div class="compare-img"><img src="images/media/c1.jpg" alt=""></div>
+						<ul class="compare-info">
+							<li><b>Цена </b> <span class="compare-price"><span>72 500</span>₽</span></li>
+							<li><b>цвет</b> Розовый</li>
+							<li><b>Материалы обивки</b> Рогожка, экокожа</li>
+							<li><b>Наполнение</b> ППУ</li>
+							<li><b>Габаритные размеры</b>
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>233см</div>
+									<div class="compare-size-item">Ширина <br>107см</div>
+									<div class="compare-size-item">Высота <br>90см</div>
+								</div> 
+							</li>
+							<li><b>Спальное место </b>
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>233см</div>
+									<div class="compare-size-item">Ширина <br>107см</div>
+									<div class="compare-size-item">Высота <br>90см</div>
+								</div> 
+							</li>
+							<li><b>ЗАрядное устройство usb</b> -</li>
+							<li><b>количество посадочных мест</b> 2</li>
+							<li><b>Декоративные подушки</b> -</li>
+							<li><b>Бельевой ящик</b> -</li>
+							<li><b>Конфигурация</b> -</li>
+							<li><b>Ширина дверного проема</b> 70</li>
+							<li><b>механизм</b> без механизма</li>
+							<li><b>Цвет ножек</b> Орех, Сосна</li>
+							<li><b>Спальное место</b> -</li>
+							<li><b>Транспортировка</b> -</li>
+							<li><b>посадочное место</b> 
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>57см</div>
+									<div class="compare-size-item">Ширина <br>46см</div>
+									<div class="compare-size-item">Высота <br>13см</div>
+								</div> 
+							</li>
+							<li><b>Наполнение подушек</b> -</li>
+							<li><b>Наполнение</b> зависимый пружинный блок</li>
+						</ul>
+						<div class="compare-button">
+							<a href="" class="button button-white"><span class="button-wrap">в корзину</span></a>
+						</div>
+						<a href="" class="compare-ask">Задать вопрос по этой модели</a>
+					</div>
+					<div class="compare-slide">
+						<div class="compare-top">
+							<a href="" class="compare-delete">Удалить</a>
+							<div class="compare-category">Диван</div>
+						</div>
+						<div class="compare-name"><a href="">Мартин</a></div>
+						<div class="compare-img"><img src="images/media/c1.jpg" alt=""></div>
+						<ul class="compare-info">
+							<li><b>Цена </b> <span class="compare-price"><span>72 500</span>₽</span></li>
+							<li><b>цвет</b> Розовый</li>
+							<li><b>Материалы обивки</b> Рогожка, экокожа</li>
+							<li><b>Наполнение</b> ППУ</li>
+							<li><b>Габаритные размеры</b>
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>233см</div>
+									<div class="compare-size-item">Ширина <br>107см</div>
+									<div class="compare-size-item">Высота <br>90см</div>
+								</div> 
+							</li>
+							<li><b>Спальное место </b>
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>233см</div>
+									<div class="compare-size-item">Ширина <br>107см</div>
+									<div class="compare-size-item">Высота <br>90см</div>
+								</div> 
+							</li>
+							<li><b>ЗАрядное устройство usb</b> -</li>
+							<li><b>количество посадочных мест</b> 2</li>
+							<li><b>Декоративные подушки</b> -</li>
+							<li><b>Бельевой ящик</b> -</li>
+							<li><b>Конфигурация</b> -</li>
+							<li><b>Ширина дверного проема</b> 70</li>
+							<li><b>механизм</b> без механизма</li>
+							<li><b>Цвет ножек</b> Орех, Сосна</li>
+							<li><b>Спальное место</b> -</li>
+							<li><b>Транспортировка</b> -</li>
+							<li><b>посадочное место</b> 
+								<div class="compare-size">
+									<div class="compare-size-item">Длина <br>57см</div>
+									<div class="compare-size-item">Ширина <br>46см</div>
+									<div class="compare-size-item">Высота <br>13см</div>
+								</div> 
+							</li>
+							<li><b>Наполнение подушек</b> -</li>
+							<li><b>Наполнение</b> зависимый пружинный блок</li>
+						</ul>
+						<div class="compare-button">
+							<a href="" class="button button-white"><span class="button-wrap">в корзину</span></a>
+						</div>
+						<a href="" class="compare-ask">Задать вопрос по этой модели</a>
+					</div>
+				</div>
+
+				<div class="product-section">
+					<h2 class="title">Другие диваны серии Мадейра</h2>
+					<div class="catalog-slider">
+						<div class="catalog-slide">
+							<div class="catalog-item">
+								<div class="catalog-inner">
+									<div class="catalog-icons">
+										<a href="" class="catalog-up"></a>
+										<a href="" class="catalog-fav"></a>
+									</div>
+									<div class="catalog-img">
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c1.jpg" alt=""></a></div>
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c2.jpg" alt=""></a></div>
+									</div>
+									<div class="catalog-category"><a href="">Еврокнижка</a></div>
+									<div class="catalog-name"><a href="">Фиджи</a></div>
+									<div class="catalog-price">5 500 ₽</div>
+									<div class="catalog-hidden">
+										<div class="catalog-buttons">
+											<a href="" class="button-min">Купить</a>
+											<a href="" class="button-min button-light">в корзину</a>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Габаритные размеры</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Спальное место</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-slide">
+							<div class="catalog-item">
+								<div class="catalog-inner">
+									<div class="catalog-icons">
+										<a href="" class="catalog-up"></a>
+										<a href="" class="catalog-fav"></a>
+									</div>
+									<div class="catalog-img">
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c2.jpg" alt=""></a></div>
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c1.jpg" alt=""></a></div>
+									</div>
+									<div class="catalog-category"><a href="">Выкатные диваны</a></div>
+									<div class="catalog-name"><a href="">Амстердам</a></div>
+									<div class="catalog-price">14 000 ₽</div>
+									<div class="catalog-hidden">
+										<div class="catalog-buttons">
+											<a href="" class="button-min">Купить</a>
+											<a href="" class="button-min button-light">в корзину</a>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Габаритные размеры</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Спальное место</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-slide">
+							<div class="catalog-item">
+								<div class="catalog-inner">
+									<div class="catalog-icons">
+										<a href="" class="catalog-up"></a>
+										<a href="" class="catalog-fav"></a>
+									</div>
+									<div class="catalog-img">
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c3.jpg" alt=""></a></div>
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c1.jpg" alt=""></a></div>
+									</div>
+									<div class="catalog-category"><a href="">Угловые диваны</a></div>
+									<div class="catalog-name"><a href="">Мартин</a></div>
+									<div class="catalog-price">34 500 ₽</div>
+									<div class="catalog-hidden">
+										<div class="catalog-buttons">
+											<a href="" class="button-min">Купить</a>
+											<a href="" class="button-min button-light">в корзину</a>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Габаритные размеры</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Спальное место</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-slide">
+							<div class="catalog-item">
+								<div class="catalog-inner">
+									<div class="catalog-icons">
+										<a href="" class="catalog-up"></a>
+										<a href="" class="catalog-fav"></a>
+									</div>
+									<div class="catalog-img">
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c4.jpg" alt=""></a></div>
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c1.jpg" alt=""></a></div>
+									</div>
+									<div class="catalog-category"><a href="">Аккордеон</a></div>
+									<div class="catalog-name"><a href="">Статус</a></div>
+									<div class="catalog-price">122 500 ₽</div>
+									<div class="catalog-hidden">
+										<div class="catalog-buttons">
+											<a href="" class="button-min">Купить</a>
+											<a href="" class="button-min button-light">в корзину</a>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Габаритные размеры</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Спальное место</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-section">
+					<h2 class="title">Другие товары серии Мадейра</h2>
+					<div class="catalog-slider">
+						<div class="catalog-slide">
+							<div class="catalog-item">
+								<div class="catalog-inner">
+									<div class="catalog-icons">
+										<a href="" class="catalog-up"></a>
+										<a href="" class="catalog-fav"></a>
+									</div>
+									<div class="catalog-img">
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c1.jpg" alt=""></a></div>
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c2.jpg" alt=""></a></div>
+									</div>
+									<div class="catalog-category"><a href="">Еврокнижка</a></div>
+									<div class="catalog-name"><a href="">Фиджи</a></div>
+									<div class="catalog-price">5 500 ₽</div>
+									<div class="catalog-hidden">
+										<div class="catalog-buttons">
+											<a href="" class="button-min">Купить</a>
+											<a href="" class="button-min button-light">в корзину</a>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Габаритные размеры</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Спальное место</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-slide">
+							<div class="catalog-item">
+								<div class="catalog-inner">
+									<div class="catalog-icons">
+										<a href="" class="catalog-up"></a>
+										<a href="" class="catalog-fav"></a>
+									</div>
+									<div class="catalog-img">
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c2.jpg" alt=""></a></div>
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c1.jpg" alt=""></a></div>
+									</div>
+									<div class="catalog-category"><a href="">Выкатные диваны</a></div>
+									<div class="catalog-name"><a href="">Амстердам</a></div>
+									<div class="catalog-price">14 000 ₽</div>
+									<div class="catalog-hidden">
+										<div class="catalog-buttons">
+											<a href="" class="button-min">Купить</a>
+											<a href="" class="button-min button-light">в корзину</a>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Габаритные размеры</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Спальное место</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-slide">
+							<div class="catalog-item">
+								<div class="catalog-inner">
+									<div class="catalog-icons">
+										<a href="" class="catalog-up"></a>
+										<a href="" class="catalog-fav"></a>
+									</div>
+									<div class="catalog-img">
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c3.jpg" alt=""></a></div>
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c1.jpg" alt=""></a></div>
+									</div>
+									<div class="catalog-category"><a href="">Угловые диваны</a></div>
+									<div class="catalog-name"><a href="">Мартин</a></div>
+									<div class="catalog-price">34 500 ₽</div>
+									<div class="catalog-hidden">
+										<div class="catalog-buttons">
+											<a href="" class="button-min">Купить</a>
+											<a href="" class="button-min button-light">в корзину</a>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Габаритные размеры</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Спальное место</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-slide">
+							<div class="catalog-item">
+								<div class="catalog-inner">
+									<div class="catalog-icons">
+										<a href="" class="catalog-up"></a>
+										<a href="" class="catalog-fav"></a>
+									</div>
+									<div class="catalog-img">
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c4.jpg" alt=""></a></div>
+										<div class="catalog-img-slide"><a href=""><img src="images/media/c1.jpg" alt=""></a></div>
+									</div>
+									<div class="catalog-category"><a href="">Аккордеон</a></div>
+									<div class="catalog-name"><a href="">Статус</a></div>
+									<div class="catalog-price">122 500 ₽</div>
+									<div class="catalog-hidden">
+										<div class="catalog-buttons">
+											<a href="" class="button-min">Купить</a>
+											<a href="" class="button-min button-light">в корзину</a>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Габаритные размеры</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+										<div class="catalog-size">
+											<div class="size-title">Спальное место</div>
+											<div class="size-line">
+												<div class="size-item">Длина <br>233см</div>
+												<div class="size-item">Ширина <br>107см</div>
+												<div class="size-item">Высота <br>90см</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="bottom">
+			<div class="holder">
+				<div class="bottom-block">
+					<div class="bottom-col">
+						<div class="bottom-text">Не можете определиться с моделью?</div>
+						<div class="bottom-title">Свяжитесь с нами</div>
+					</div>
+					<div class="bottom-col">
+						<div class="bottom-phone"><a href="tel:+88008008080">8 800 800 80 80</a></div>
+						<div class="bottom-text">Мы работаем ежедневно с 9<sup>00</sup> до 20<sup>00</sup></div>	
+					</div>
+				</div>
+			</div>	
+		</section>
+	{% include 'sayt/_partials/footer.html' %}
+	</div>
+{% endblock %}
